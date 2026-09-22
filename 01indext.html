@@ -1,1141 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MK Traders Wholesalers | Shirur Pune</title>
+  <title>MK Traders | Wholesale & Manufacturing</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
-}
+  <meta name="description"
+        content="MK Traders - Wholesale products and manufacturing solutions. Contact us for business enquiries and bulk orders.">
 
-body{
-    background:#f7f5ef;
-    color:#222;
-}
-
-/* HEADER */
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#0b0d0c;
-    padding:15px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 4px 20px #0005;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo-box{
-    width:45px;
-    height:45px;
-    border:2px solid #d4af37;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#d4af37;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.logo-text{
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-}
-
-.logo-text span{
-    color:#d4af37;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:15px;
-}
-
-nav a:hover{
-    color:#d4af37;
-}
-
-.lang-btn{
-    margin-left:20px;
-    padding:8px 13px;
-    border:1px solid #d4af37;
-    background:transparent;
-    color:#d4af37;
-    border-radius:20px;
-    cursor:pointer;
-}
-
-/* HERO */
-.hero{
-    min-height:650px;
-    display:flex;
-    align-items:center;
-    padding:80px 7%;
-    color:white;
-
-    background:
-    linear-gradient(90deg,#000d,#0005),
-    url("https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&q=85");
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero-content{
-    max-width:750px;
-}
-
-.badge{
-    display:inline-block;
-    color:#d4af37;
-    border:1px solid #d4af37;
-    padding:8px 16px;
-    border-radius:30px;
-    margin-bottom:20px;
-    font-size:14px;
-}
-
-.hero h1{
-    font-size:60px;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#d4af37;
-}
-
-.hero p{
-    font-size:20px;
-    line-height:1.7;
-    color:#eee;
-    margin-bottom:30px;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 25px;
-    border-radius:7px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-right:10px;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.whatsapp{
-    background:#25d366;
-    color:white;
-}
-
-.call{
-    background:#d4af37;
-    color:#111;
-}
-
-/* STATS */
-.stats{
-    background:#111;
-    color:white;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    padding:35px 7%;
-    text-align:center;
-}
-
-.stat h3{
-    color:#d4af37;
-    font-size:30px;
-}
-
-.stat p{
-    margin-top:7px;
-    color:#ccc;
-}
-
-/* PRODUCTS */
-section{
-    padding:80px 7%;
-}
-
-.title{
-    text-align:center;
-    margin-bottom:45px;
-}
-
-.title h2{
-    font-size:42px;
-}
-
-.title h2 span{
-    color:#b18b20;
-}
-
-.title p{
-    color:#777;
-    margin-top:10px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.product{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 10px 30px #0001;
-    transition:.4s;
-    border:1px solid #eee;
-}
-
-.product:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px #0002;
-}
-
-.product-top{
-    height:210px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:80px;
-    background:linear-gradient(135deg,#eee5c9,#fff);
-}
-
-.product-info{
-    padding:25px;
-}
-
-.product-info h3{
-    font-size:23px;
-    margin-bottom:10px;
-}
-
-.product-info p{
-    color:#777;
-    line-height:1.5;
-}
-
-.rate{
-    display:block;
-    margin-top:18px;
-    text-decoration:none;
-    color:#087f3e;
-    font-weight:bold;
-}
-
-/* ABOUT */
-.about{
-    background:#101211;
-    color:white;
-    text-align:center;
-}
-
-.about h2{
-    color:#d4af37;
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.about p{
-    max-width:850px;
-    margin:auto;
-    color:#ddd;
-    font-size:18px;
-    line-height:1.9;
-}
-
-/* FEATURES */
-.features{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.feature{
-    background:white;
-    padding:30px;
-    text-align:center;
-    border-radius:15px;
-    box-shadow:0 8px 25px #0001;
-}
-
-.feature .icon{
-    font-size:45px;
-    margin-bottom:15px;
-}
-
-.feature h3{
-    margin-bottom:10px;
-}
-
-.feature p{
-    color:#777;
-}
-
-/* CONTACT */
-.contact{
-    background:#eee9dc;
-}
-
-.contact-box{
-    max-width:850px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 10px 30px #0001;
-}
-
-.contact-box p{
-    margin:17px;
-    font-size:17px;
-}
-
-.map{
-    margin-top:30px;
-    width:100%;
-    height:280px;
-    border:0;
-    border-radius:12px;
-}
-
-/* FOOTER */
-footer{
-    background:#090a09;
-    color:#aaa;
-    text-align:center;
-    padding:30px;
-}
-
-footer strong{
-    color:#d4af37;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-
-    .products{
-        grid-template-columns:repeat(2,1fr);
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
     }
 
-    .hero h1{
-        font-size:45px;
+    body {
+      background: #f5f7fa;
+      color: #222;
     }
 
-    .features{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:600px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav a{
-        margin:0 6px;
-        font-size:13px;
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #111827;
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .lang-btn{
-        margin-left:5px;
+    .logo {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
     }
 
-    .hero{
-        min-height:600px;
-        padding:60px 7%;
+    .logo span {
+      color: #22c55e;
     }
 
-    .hero h1{
-        font-size:38px;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
     }
 
-    .hero p{
-        font-size:17px;
+    nav a:hover {
+      color: #22c55e;
     }
 
-    .btn{
-        display:block;
-        text-align:center;
-        margin:10px 0;
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 7%;
+      background:
+        linear-gradient(135deg, #111827, #1f2937);
+      color: white;
     }
 
-    .stats{
-        grid-template-columns:1fr;
-        gap:25px;
+    .hero-content {
+      max-width: 700px;
     }
 
-    .products{
-        grid-template-columns:1fr;
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 70px);
+      line-height: 1.05;
+      margin-bottom: 20px;
     }
 
-    section{
-        padding:60px 6%;
+    .hero h1 span {
+      color: #22c55e;
     }
 
-    .title h2{
-        font-size:32px;
+    .hero p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #d1d5db;
+      margin-bottom: 30px;
     }
-}<!-- ================= 300+ PRODUCTS ================= -->
-<section class="products-section" id="products">
-  <div class="section-title">
-    <span>OUR PRODUCTS</span>
-    <h2>300+ Products</h2>
-    <p>Wholesale products available at MK Traders</p>
-  </div>
 
-  <!-- Search -->
-  <div class="product-search">
-    <input
-      type="text"
-      id="productSearch"
-      placeholder="🔍 Search product..."
-      onkeyup="showProducts()"
-    />
-  </div>
+    .btn {
+      display: inline-block;
+      background: #22c55e;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
 
-  <!-- Categories -->
-  <div class="category-buttons">
-    <button onclick="filterProducts('All')">All</button>
-    <button onclick="filterProducts('Grains')">Grains</button>
-    <button onclick="filterProducts('Pulses')">Pulses</button>
-    <button onclick="filterProducts('Spices')">Spices</button>
-    <button onclick="filterProducts('Oil')">Oil</button>
-    <button onclick="filterProducts('Dry Fruits')">Dry Fruits</button>
-    <button onclick="filterProducts('Food')">Food</button>
-    <button onclick="filterProducts('Beverages')">Beverages</button>
-    <button onclick="filterProducts('Cleaning')">Cleaning</button>
-    <button onclick="filterProducts('Personal Care')">Personal Care</button>
-  </div>
+    .btn:hover {
+      background: #16a34a;
+    }
 
-  <div id="productCount" class="product-count"></div>
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #22c55e;
+    }
 
-  <div class="product-grid" id="productGrid"></div>
-</section>
-const productData = [
-/* ================= GRAINS ================= */
-["Grains","🌾","Wheat / गहू"],
-["Grains","🌾","Jowar / ज्वारी"],
-["Grains","🌾","Bajra / बाजरी"],
-["Grains","🌾","Rice / तांदूळ"],
-["Grains","🌾","Basmati Rice"],
-["Grains","🌾","Sona Masuri Rice"],
-["Grains","🌾","Kolam Rice"],
-["Grains","🌾","Indrayani Rice"],
-["Grains","🌾","Jeera Rice"],
-["Grains","🌾","Steam Rice"],
-["Grains","🌾","Parboiled Rice"],
-["Grains","🌾","Broken Rice"],
-["Grains","🌾","Brown Rice"],
-["Grains","🌾","Red Rice"],
-["Grains","🌾","Matta Rice"],
-["Grains","🌾","Idli Rice"],
-["Grains","🌾","Dosa Rice"],
-["Grains","🌾","Poha Thick"],
-["Grains","🌾","Poha Thin"],
-["Grains","🌾","Maize"],
-["Grains","🌾","Corn"],
-["Grains","🌾","Ragi"],
-["Grains","🌾","Nachni"],
-["Grains","🌾","Rajgira"],
-["Grains","🌾","Kodo Millet"],
-["Grains","🌾","Foxtail Millet"],
-["Grains","🌾","Little Millet"],
-["Grains","🌾","Barnyard Millet"],
-["Grains","🌾","Proso Millet"],
-["Grains","🌾","Quinoa"],
+    /* SECTIONS */
+    section {
+      padding: 70px 7%;
+    }
 
-/* ================= PULSES ================= */
-["Pulses","🫘","Chana Dal"],
-["Pulses","🫘","Kabuli Chana"],
-["Pulses","🫘","Kala Chana"],
-["Pulses","🫘","Green Chana"],
-["Pulses","🫘","Toor Dal"],
-["Pulses","🫘","Tur Dal"],
-["Pulses","🫘","Moong Dal"],
-["Pulses","🫘","Green Moong"],
-["Pulses","🫘","Whole Moong"],
-["Pulses","🫘","Urad Dal"],
-["Pulses","🫘","Black Urad"],
-["Pulses","🫘","White Urad"],
-["Pulses","🫘","Masoor Dal"],
-["Pulses","🫘","Whole Masoor"],
-["Pulses","🫘","Moth Dal"],
-["Pulses","🫘","Matki"],
-["Pulses","🫘","Rajma Red"],
-["Pulses","🫘","Rajma Chitra"],
-["Pulses","🫘","Lobia"],
-["Pulses","🫘","Vatana White"],
-["Pulses","🫘","Vatana Green"],
-["Pulses","🫘","Dry Peas"],
-["Pulses","🫘","Soybean"],
-["Pulses","🫘","Horse Gram"],
-["Pulses","🫘","Kulith Dal"],
-["Pulses","🫘","Masoor Whole"],
-["Pulses","🫘","Chawli"],
-["Pulses","🫘","Pigeon Peas"],
-["Pulses","🫘","Split Peas"],
-["Pulses","🫘","Mixed Dal"],
+    .title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
 
-/* ================= FLOUR ================= */
-["Food","🌾","Wheat Flour / Atta"],
-["Food","🌾","Maida"],
-["Food","🌾","Sooji / Rava"],
-["Food","🌾","Besan"],
-["Food","🌾","Rice Flour"],
-["Food","🌾","Jowar Flour"],
-["Food","🌾","Bajra Flour"],
-["Food","🌾","Ragi Flour"],
-["Food","🌾","Multigrain Flour"],
-["Food","🌾","Corn Flour"],
-["Food","🌾","Gram Flour"],
-["Food","🌾","Sattu"],
-["Food","🌾","Nachni Flour"],
-["Food","🌾","Rajgira Flour"],
-["Food","🌾","Dosa Flour"],
-["Food","🌾","Idli Rava"],
-["Food","🌾","Upma Rava"],
-["Food","🌾","Fine Rava"],
-["Food","🌾","Wheat Bran"],
-["Food","🌾","Rice Bran"],
+    .title h2 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
 
-/* ================= SPICES ================= */
-["Spices","🌶️","Red Chilli Powder"],
-["Spices","🌶️","Turmeric Powder"],
-["Spices","🌿","Coriander Powder"],
-["Spices","🌿","Cumin Powder"],
-["Spices","🌿","Black Pepper Powder"],
-["Spices","🌿","Garam Masala"],
-["Spices","🌿","Kitchen King Masala"],
-["Spices","🌿","Goda Masala"],
-["Spices","🌿","Biryani Masala"],
-["Spices","🌿","Pav Bhaji Masala"],
-["Spices","🌿","Chaat Masala"],
-["Spices","🌿","Sambar Masala"],
-["Spices","🌿","Rasam Powder"],
-["Spices","🌿","Tea Masala"],
-["Spices","🌿","Chicken Masala"],
-["Spices","🌿","Mutton Masala"],
-["Spices","🌿","Fish Masala"],
-["Spices","🌿","Sabji Masala"],
-["Spices","🌿","Amchur Powder"],
-["Spices","🌿","Hing"],
-["Spices","🌿","Black Pepper"],
-["Spices","🌿","Cloves"],
-["Spices","🌿","Cinnamon"],
-["Spices","🌿","Cardamom"],
-["Spices","🌿","Bay Leaf"],
-["Spices","🌿","Star Anise"],
-["Spices","🌿","Nutmeg"],
-["Spices","🌿","Mace"],
-["Spices","🌿","Fennel"],
-["Spices","🌿","Ajwain"],
-["Spices","🌿","Mustard Seeds"],
-["Spices","🌿","Fenugreek Seeds"],
-["Spices","🌿","Sesame Seeds"],
-["Spices","🌿","Cumin Seeds"],
-["Spices","🌿","Coriander Seeds"],
-["Spices","🌿","Dry Coconut"],
-["Spices","🌿","Dry Red Chilli"],
-["Spices","🌿","Kasuri Methi"],
-["Spices","🌿","Tamarind"],
-["Spices","🌿","Ginger Powder"],
+    .title p {
+      color: #666;
+    }
 
-/* ================= OIL ================= */
-["Oil","🫗","Sunflower Oil"],
-["Oil","🫗","Soybean Oil"],
-["Oil","🫗","Groundnut Oil"],
-["Oil","🫗","Mustard Oil"],
-["Oil","🫗","Palm Oil"],
-["Oil","🫗","Rice Bran Oil"],
-["Oil","🫗","Cottonseed Oil"],
-["Oil","🫗","Coconut Oil"],
-["Oil","🫗","Sesame Oil"],
-["Oil","🫗","Olive Oil"],
-["Oil","🫗","Safflower Oil"],
-["Oil","🫗","Corn Oil"],
-["Oil","🫗","Vanaspati"],
-["Oil","🫗","Ghee"],
-["Oil","🫗","Desi Ghee"],
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
 
-/* ================= DRY FRUITS ================= */
-["Dry Fruits","🥜","Almonds"],
-["Dry Fruits","🥜","Cashew"],
-["Dry Fruits","🥜","Raisins"],
-["Dry Fruits","🥜","Black Raisins"],
-["Dry Fruits","🥜","Walnuts"],
-["Dry Fruits","🥜","Pistachio"],
-["Dry Fruits","🥜","Dates"],
-["Dry Fruits","🥜","Anjeer"],
-["Dry Fruits","🥜","Apricot"],
-["Dry Fruits","🥜","Makhana"],
-["Dry Fruits","🥜","Peanuts"],
-["Dry Fruits","🥜","Roasted Peanuts"],
-["Dry Fruits","🥜","Chia Seeds"],
-["Dry Fruits","🥜","Flax Seeds"],
-["Dry Fruits","🥜","Pumpkin Seeds"],
-["Dry Fruits","🥜","Sunflower Seeds"],
-["Dry Fruits","🥜","Watermelon Seeds"],
-["Dry Fruits","🥜","Mixed Dry Fruits"],
-["Dry Fruits","🥜","Coconut Chips"],
-["Dry Fruits","🥜","Fox Nuts"],
+    .about-box {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
 
-/* ================= SUGAR & SWEET ================= */
-["Food","🍬","Sugar"],
-["Food","🍬","Brown Sugar"],
-["Food","🍬","Powdered Sugar"],
-["Food","🍬","Jaggery / Gur"],
-["Food","🍬","Jaggery Powder"],
-["Food","🍬","Khandsari Sugar"],
-["Food","🍬","Mishri"],
-["Food","🍬","Rock Sugar"],
-["Food","🍬","Honey"],
-["Food","🍬","Glucose"],
+    .about-box h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
 
-/* ================= SNACKS ================= */
-["Food","🍪","Biscuits"],
-["Food","🍪","Cream Biscuits"],
-["Food","🍪","Glucose Biscuits"],
-["Food","🍪","Marie Biscuits"],
-["Food","🍪","Salt Biscuits"],
-["Food","🍿","Chivda"],
-["Food","🍿","Poha Chivda"],
-["Food","🍿","Bhadang"],
-["Food","🍿","Sev"],
-["Food","🍿","Nylon Sev"],
-["Food","🍿","Bhujia"],
-["Food","🍿","Boondi"],
-["Food","🍿","Dal Moth"],
-["Food","🍿","Peanut Chikki"],
-["Food","🍿","Til Chikki"],
-["Food","🍿","Gajak"],
-["Food","🍿","Popcorn"],
-["Food","🍿","Potato Chips"],
-["Food","🍿","Banana Chips"],
-["Food","🍿","Corn Snacks"],
+    .about-box p {
+      color: #555;
+      line-height: 1.8;
+    }
 
-/* ================= BEVERAGES ================= */
-["Beverages","☕","Tea"],
-["Beverages","☕","Black Tea"],
-["Beverages","☕","Green Tea"],
-["Beverages","☕","Instant Tea"],
-["Beverages","☕","Coffee"],
-["Beverages","🥤","Mango Drink"],
-["Beverages","🥤","Orange Drink"],
-["Beverages","🥤","Lemon Drink"],
-["Beverages","🥤","Energy Drink"],
-["Beverages","🥤","Soft Drinks"],
-["Beverages","🥤","Packaged Juice"],
-["Beverages","🥤","Coconut Water"],
-["Beverages","🥤","Glucose Drink"],
-["Beverages","🥤","Sherbet"],
-["Beverages","🥤","Milk Powder"],
+    /* SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
 
-/* ================= PICKLES & SAUCES ================= */
-["Food","🥫","Mango Pickle"],
-["Food","🥫","Lemon Pickle"],
-["Food","🥫","Mixed Pickle"],
-["Food","🥫","Chilli Pickle"],
-["Food","🥫","Garlic Pickle"],
-["Food","🥫","Tomato Ketchup"],
-["Food","🥫","Red Chilli Sauce"],
-["Food","🥫","Green Chilli Sauce"],
-["Food","🥫","Soy Sauce"],
-["Food","🥫","Vinegar"],
-["Food","🥫","Schezwan Sauce"],
-["Food","🥫","Mayonnaise"],
-["Food","🥫","Imli Sauce"],
-["Food","🥫","Mint Chutney"],
-["Food","🥫","Coconut Chutney"],
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
 
-/* ================= CLEANING ================= */
-["Cleaning","🧹","Detergent Powder"],
-["Cleaning","🧹","Detergent Bar"],
-["Cleaning","🧹","Dishwash Bar"],
-["Cleaning","🧹","Dishwash Liquid"],
-["Cleaning","🧹","Floor Cleaner"],
-["Cleaning","🧹","Toilet Cleaner"],
-["Cleaning","🧹","Glass Cleaner"],
-["Cleaning","🧹","Phenyl"],
-["Cleaning","🧹","Bleaching Powder"],
-["Cleaning","🧹","Washing Soap"],
-["Cleaning","🧹","Scrub Pad"],
-["Cleaning","🧹","Steel Scrubber"],
-["Cleaning","🧹","Floor Mop"],
-["Cleaning","🧹","Broom"],
-["Cleaning","🧹","Garbage Bags"],
+    .card:hover {
+      transform: translateY(-8px);
+    }
 
-/* ================= PERSONAL CARE ================= */
-["Personal Care","🧴","Bath Soap"],
-["Personal Care","🧴","Hand Wash"],
-["Personal Care","🧴","Shampoo"],
-["Personal Care","🧴","Hair Oil"],
-["Personal Care","🧴","Toothpaste"],
-["Personal Care","🧴","Toothbrush"],
-["Personal Care","🧴","Face Wash"],
-["Personal Care","🧴","Body Lotion"],
-["Personal Care","🧴","Talcum Powder"],
-["Personal Care","🧴","Deodorant"],
-["Personal Care","🧴","Hand Sanitizer"],
-["Personal Care","🧴","Hair Shampoo"],
-["Personal Care","🧴","Conditioner"],
-["Personal Care","🧴","Cream"],
-["Personal Care","🧴","Vaseline"],
+    .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
 
-/* ================= KITCHEN ================= */
-["Food","🍽️","Papad"],
-["Food","🍽️","Urad Papad"],
-["Food","🍽️","Rice Papad"],
-["Food","🍽️","Masala Papad"],
-["Food","🍽️","Fryums"],
-["Food","🍽️","Vermicelli"],
-["Food","🍽️","Pasta"],
-["Food","🍽️","Macaroni"],
-["Food","🍽️","Noodles"],
-["Food","🍽️","Instant Noodles"],
-["Food","🍽️","Corn Flakes"],
-["Food","🍽️","Oats"],
-["Food","🍽️","Dalia"],
-["Food","🍽️","Custard Powder"],
-["Food","🍽️","Baking Powder"],
-["Food","🍽️","Baking Soda"],
-["Food","🍽️","Corn Starch"],
-["Food","🍽️","Cocoa Powder"],
-["Food","🍽️","Food Colour"],
-["Food","🍽️","Jelly"],
-["Food","🍽️","Custard"],
-["Food","🍽️","Soup Mix"],
-["Food","🍽️","Instant Mix"],
-["Food","🍽️","Ginger Garlic Paste"],
-["Food","🍽️","Tomato Puree"],
+    .card h3 {
+      margin-bottom: 12px;
+    }
 
-/* ================= MORE PRODUCTS ================= */
-["Food","🥫","Mayonnaise Sachet"],
-["Food","🥫","Cheese Spread"],
-["Food","🥫","Peanut Butter"],
-["Food","🥫","Jam"],
-["Food","🥫","Chocolate Spread"],
-["Food","🍫","Milk Chocolate"],
-["Food","🍫","Dark Chocolate"],
-["Food","🍫","Wafer Chocolate"],
-["Food","🍫","Toffee"],
-["Food","🍫","Lollipop"],
-["Food","🍫","Candy"],
-["Food","🍫","Jelly Candy"],
-["Food","🍫","Mint Candy"],
-["Food","🍫","Eclairs"],
-["Food","🍫","Chewing Gum"],
+    .card p {
+      color: #666;
+      line-height: 1.6;
+    }
 
-/* ================= MORE GRAINS ================= */
-["Grains","🌾","Wheat Dalia"],
-["Grains","🌾","Broken Wheat"],
-["Grains","🌾","Rice Dalia"],
-["Grains","🌾","Rice Flakes"],
-["Grains","🌾","Red Poha"],
-["Grains","🌾","Brown Poha"],
-["Grains","🌾","Millet Poha"],
-["Grains","🌾","Corn Flakes"],
-["Grains","🌾","Barley"],
-["Grains","🌾","Barley Flour"],
+    /* PRODUCTS */
+    .products {
+      background: #111827;
+      color: white;
+    }
 
-/* ================= MORE PULSES ================= */
-["Pulses","🫘","Chana Whole"],
-["Pulses","🫘","Chana Roasted"],
-["Pulses","🫘","Moong Roasted"],
-["Pulses","🫘","Masoor Red"],
-["Pulses","🫘","Urad Split"],
-["Pulses","🫘","Toor Whole"],
-["Pulses","🫘","Green Peas Dry"],
-["Pulses","🫘","Black Eyed Peas"],
-["Pulses","🫘","Soy Chunks"],
-["Pulses","🫘","Soy Granules"],
+    .products .title p {
+      color: #cbd5e1;
+    }
 
-/* ================= MORE SPICES ================= */
-["Spices","🌶️","Chilli Flakes"],
-["Spices","🌶️","Paprika"],
-["Spices","🌿","Oregano"],
-["Spices","🌿","Mixed Herbs"],
-["Spices","🌿","Basil"],
-["Spices","🌿","Rosemary"],
-["Spices","🌿","Thyme"],
-["Spices","🌿","Dried Mint"],
-["Spices","🌿","Saffron"],
-["Spices","🌿","Lemon Powder"]
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
 
-];
+    .product {
+      background: #1f2937;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #374151;
+    }
 
-let currentCategory = "All";
+    .product h3 {
+      margin-top: 10px;
+    }
 
-function showProducts() {
+    /* WHY US */
+    .why {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
 
-  const search = document
-    .getElementById("productSearch")
-    .value
-    .toLowerCase();
+    .why-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
 
-  const grid = document.getElementById("productGrid");
+    .why-box strong {
+      display: block;
+      font-size: 25px;
+      color: #16a34a;
+      margin-bottom: 8px;
+    }
 
-  const filtered = productData.filter(p => {
+    /* CONTACT */
+    .contact {
+      background: #ecfdf5;
+    }
 
-    const categoryMatch =
-      currentCategory === "All" || p[0] === currentCategory;
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
 
-    const searchMatch =
-      p[2].toLowerCase().includes(search);
+    .contact-box p {
+      margin: 12px 0;
+      color: #555;
+    }
 
-    return categoryMatch && searchMatch;
-  });
+    /* FOOTER */
+    footer {
+      background: #030712;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
 
-  document.getElementById("productCount").innerHTML =
-    "Showing " + filtered.length + " products";
+    footer span {
+      color: #22c55e;
+    }
 
-  grid.innerHTML = filtered.map(p => `
-    <div class="product-card">
-      <div class="product-icon">${p[1]}</div>
-      <h3>${p[2]}</h3>
-      <p>${p[0]}</p>
-      <a
-        href="https://wa.me/918055410407?text=Hello%20MK%20Traders,%20I%20want%20information%20about%20${encodeURIComponent(p[2])}"
-        target="_blank"
-        class="product-whatsapp">
-        WhatsApp Enquiry
-      </a>
-    </div>
-  `).join("");
-}
+    /* MOBILE */
+    @media(max-width: 800px) {
 
-function filterProducts(category) {
-  currentCategory = category;
-  showProducts();
-}
+      nav {
+        padding: 15px 5%;
+      }
 
-showProducts();
-</style>
+      nav a {
+        display: none;
+      }
+
+      .hero {
+        min-height: 80vh;
+        padding: 50px 6%;
+      }
+
+      .about,
+      .cards,
+      .product-grid,
+      .why {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .contact-box {
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">MK <span>Traders</span></div>
 
-<div class="logo">
-    <div class="logo-box">MK</div>
-
-    <div class="logo-text">
-        MK <span>TRADERS</span>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
     </div>
-</div>
+  </nav>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
 
-    <button class="lang-btn" onclick="changeLanguage()">
-        मराठी
-    </button>
-</nav>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
 
-</header>
+      <p style="color:#22c55e;font-weight:bold;">
+        WHOLESALE • TRADING • MANUFACTURING
+      </p>
 
+      <h1>
+        Your Trusted<br>
+        <span>Business Partner</span>
+      </h1>
 
-<!-- HERO -->
-<section class="hero" id="home">
+      <p>
+        MK Traders provides reliable wholesale and trading solutions
+        for businesses looking for quality products and dependable service.
+      </p>
 
-<div class="hero-content">
+      <a href="#products" class="btn">Explore Products</a>
 
-<div class="badge">
-    🌾 Trusted Wholesale Supplier
-</div>
+      <a href="#contact" class="btn btn-outline">
+        Contact Us
+      </a>
 
-<h1>
-    MK Traders <span>Wholesalers</span>
-</h1>
+    </div>
+  </section>
 
-<p id="heroText">
-    Quality grains and wholesale products at competitive rates.
-    Serving Shirur, Pune and surrounding areas.
-</p>
 
-<a class="btn whatsapp"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20I%20want%20to%20know%20the%20wholesale%20rates."
-target="_blank">
-💬 WhatsApp for Rates
-</a>
+  <!-- ABOUT -->
+  <section id="about">
 
-<a class="btn call" href="tel:8055410407">
-📞 Call Now
-</a>
+    <div class="title">
+      <h2>About MK Traders</h2>
+      <p>Building business relationships with trust and reliability.</p>
+    </div>
 
-</div>
+    <div class="about">
 
-</section>
+      <div class="about-box">
+        <h3>Who We Are</h3>
 
+        <p>
+          MK Traders is a growing wholesale and trading business focused
+          on supplying quality products and providing professional service
+          to customers and businesses.
+        </p>
 
-<!-- STATS -->
-<div class="stats">
+        <br>
 
-<div class="stat">
-<h3>100%</h3>
-<p>Quality Products</p>
-</div>
+        <p>
+          Our goal is simple — quality products, fair dealing and long-term
+          business relationships.
+        </p>
+      </div>
 
-<div class="stat">
-<h3>Wholesale</h3>
-<p>Competitive Rates</p>
-</div>
+      <div class="about-box">
+        <h3>Our Mission</h3>
 
-<div class="stat">
-<h3>Shirur</h3>
-<p>Pune, Maharashtra</p>
-</div>
+        <p>
+          To connect customers with reliable products and suppliers while
+          creating a smooth and trustworthy business experience.
+        </p>
 
-</div>
+        <br>
 
+        <a href="#contact" class="btn">
+          Start Business With Us
+        </a>
+      </div>
 
-<!-- PRODUCTS -->
-<section id="products">
+    </div>
+  </section>
 
-<div class="title">
-<h2>Our <span>Products</span></h2>
-<p>Quality grains for wholesale requirements</p>
-</div>
 
-<div class="products">
+  <!-- SERVICES -->
+  <section id="services">
 
-<div class="product">
+    <div class="title">
+      <h2>Our Services</h2>
+      <p>Solutions designed for businesses and bulk buyers.</p>
+    </div>
 
-<div class="product-top">🌾</div>
+    <div class="cards">
 
-<div class="product-info">
-<h3>Wheat</h3>
-<p>Quality wheat available for wholesale supply.</p>
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Wholesale Supply</h3>
+        <p>
+          Bulk product supply for retailers, businesses and regular buyers.
+        </p>
+      </div>
 
-<a class="rate"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20please%20send%20Wheat%20wholesale%20rate."
-target="_blank">
-💬 Ask Wheat Rate →
-</a>
-</div>
+      <div class="card">
+        <div class="icon">🏭</div>
+        <h3>Manufacturing</h3>
+        <p>
+          Manufacturing and supply solutions according to business needs.
+        </p>
+      </div>
 
-</div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Business Deals</h3>
+        <p>
+          Helping businesses connect and create long-term partnerships.
+        </p>
+      </div>
 
+    </div>
+  </section>
 
-<div class="product">
 
-<div class="product-top">🍚</div>
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
 
-<div class="product-info">
-<h3>Rice</h3>
-<p>Quality rice varieties for wholesale buyers.</p>
+    <div class="title">
+      <h2>Our Products</h2>
+      <p>Bulk and wholesale products for business requirements.</p>
+    </div>
 
-<a class="rate"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20please%20send%20Rice%20wholesale%20rate."
-target="_blank">
-💬 Ask Rice Rate →
-</a>
-</div>
+    <div class="product-grid">
 
-</div>
+      <div class="product">
+        <div class="icon">🧱</div>
+        <h3>AAC Blocks</h3>
+        <p>Construction material supply.</p>
+      </div>
 
+      <div class="product">
+        <div class="icon">📦</div>
+        <h3>Wholesale Goods</h3>
+        <p>Bulk supply for businesses.</p>
+      </div>
 
-<div class="product">
+      <div class="product">
+        <div class="icon">🚚</div>
+        <h3>Bulk Orders</h3>
+        <p>Large quantity business orders.</p>
+      </div>
 
-<div class="product-top">🌾</div>
+      <div class="product">
+        <div class="icon">🏢</div>
+        <h3>Business Supply</h3>
+        <p>Reliable supply solutions.</p>
+      </div>
 
-<div class="product-info">
-<h3>Jowar</h3>
-<p>Jowar available for wholesale requirements.</p>
+    </div>
 
-<a class="rate"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20please%20send%20Jowar%20wholesale%20rate."
-target="_blank">
-💬 Ask Jowar Rate →
-</a>
-</div>
+  </section>
 
-</div>
 
+  <!-- WHY US -->
+  <section>
 
-<div class="product">
+    <div class="title">
+      <h2>Why Choose MK Traders?</h2>
+      <p>Our business is built around simple principles.</p>
+    </div>
 
-<div class="product-top">🛒</div>
+    <div class="why">
 
-<div class="product-info">
-<h3>Other Products</h3>
-<p>Ask us for other available wholesale products.</p>
+      <div class="why-box">
+        <strong>01</strong>
+        Quality Products
+      </div>
 
-<a class="rate"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20please%20send%20your%20available%20products%20and%20rates."
-target="_blank">
-💬 Enquire Now →
-</a>
-</div>
+      <div class="why-box">
+        <strong>02</strong>
+        Reliable Service
+      </div>
 
-</div>
+      <div class="why-box">
+        <strong>03</strong>
+        Fair Dealing
+      </div>
 
-</div>
+      <div class="why-box">
+        <strong>04</strong>
+        Long-Term Support
+      </div>
 
-</section>
+    </div>
 
+  </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
 
-<h2>About MK Traders</h2>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
 
-<p>
-MK Traders Wholesalers is located near Bus Stand,
-Shirur, Tal. Shirur, Dist. Pune, Maharashtra.
-We provide quality grains and wholesale products
-for customers and businesses.
-</p>
+    <div class="title">
+      <h2>Let's Do Business</h2>
+      <p>Contact MK Traders for wholesale and business enquiries.</p>
+    </div>
 
-</section>
+    <div class="contact-box">
 
+      <h3>MK Traders</h3>
 
-<!-- FEATURES -->
-<section>
+      <p>
+        📍 Maharashtra, India
+      </p>
 
-<div class="title">
-<h2>Why Choose <span>MK Traders?</span></h2>
-</div>
+      <p>
+        📞 Call / WhatsApp for enquiries
+      </p>
 
-<div class="features">
+      <p>
+        📦 Bulk Orders Available
+      </p>
 
-<div class="feature">
-<div class="icon">🌾</div>
-<h3>Quality Products</h3>
-<p>We focus on quality grains and reliable wholesale supply.</p>
-</div>
+      <!-- IMPORTANT: Replace 91XXXXXXXXXX with your WhatsApp number -->
+      <a
+        href="https://wa.me/91XXXXXXXXXX"
+        class="btn"
+        target="_blank">
+        💬 WhatsApp Us
+      </a>
 
-<div class="feature">
-<div class="icon">💰</div>
-<h3>Wholesale Rates</h3>
-<p>Contact us directly for current wholesale prices.</p>
-</div>
+    </div>
 
-<div class="feature">
-<div class="icon">🤝</div>
-<h3>Trusted Service</h3>
-<p>Serving customers and businesses in Shirur and nearby areas.</p>
-</div>
+  </section>
 
-</div>
 
-</section>
+  <!-- FOOTER -->
+  <footer>
 
+    <p>
+      © 2026 <span>MK Traders</span>. All Rights Reserved.
+    </p>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+    <p style="margin-top:8px;font-size:13px;color:#9ca3af;">
+      Wholesale • Trading • Manufacturing
+    </p>
 
-<div class="title">
-<h2>Contact <span>MK Traders</span></h2>
-<p>For wholesale rates and enquiries</p>
-</div>
-
-<div class="contact-box">
-
-<p>📍 Near Bus Stand, Shirur, Tal. Shirur, Dist. Pune, Maharashtra – 412210</p>
-
-<p>
-📞 <a href="tel:8055410407">8055410407</a>
-&nbsp; / &nbsp;
-<a href="tel:8605943927">8605943927</a>
-</p>
-
-<p>
-📧 <a href="mailto:amalemahesh789@gmail.com">
-amalemahesh789@gmail.com
-</a>
-</p>
-
-<a class="btn whatsapp"
-href="https://wa.me/918055410407?text=Hello%20MK%20Traders%2C%20I%20want%20to%20know%20your%20wholesale%20rates."
-target="_blank">
-💬 WhatsApp for Rates
-</a>
-
-<br><br>
-
-<iframe
-class="map"
-src="https://www.google.com/maps?q=Shirur%2C%20Pune%2C%20Maharashtra&output=embed">
-</iframe>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-© 2026 <strong>MK Traders Wholesalers</strong> —
-All Rights Reserved
-
-</footer>
-
-
-<script>
-
-let marathi = false;
-
-function changeLanguage(){
-
-    const button = document.querySelector(".lang-btn");
-    const heroText = document.getElementById("heroText");
-
-    if(!marathi){
-
-        heroText.innerHTML =
-        "गुणवत्तापूर्ण धान्य व इतर होलसेल उत्पादने योग्य दरात. शिरूर, पुणे आणि आसपासच्या भागात सेवा.";
-
-        button.innerHTML = "English";
-
-        marathi = true;
-
-    }else{
-
-        heroText.innerHTML =
-        "Quality grains and wholesale products at competitive rates. Serving Shirur, Pune and surrounding areas.";
-
-        button.innerHTML = "मराठी";
-
-        marathi = false;
-    }
-}
-
-</script>
+  </footer>
 
 </body>
 </html>
